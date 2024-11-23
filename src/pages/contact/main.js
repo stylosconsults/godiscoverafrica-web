@@ -67,6 +67,7 @@ export const Contact = () => {
 					content='Contact GoDiscover Africa on the following address: email: +250 791 349 744, email: info@godiscoverafrica.rw '
 				/>
 			</Helmet>
+			<div className="home-body"></div>
 			<Contactinfo/>
 		</AppLayout>
 	);

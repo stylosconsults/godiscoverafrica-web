@@ -65,6 +65,8 @@ import ParticipantForm from './pages/participant/ParticipantForm';
 import { Airticket, RentalCar, Accommodation } from './pages/otherpages';
 import ViewOrder from './pagess/ViewOrder';
 import Pay from './components/payment/pay';
+import { TourBookings } from './pages/toursBookings/main';
+
 
 export default function Routes() {
   return (
@@ -84,7 +86,7 @@ export default function Routes() {
         <Route exact path='/participant' component={ParticipantForm} />
         <Route exact path='/events/:id' component={EventDetail} />
         <Route exact path='/previous-events' component={Events} />
-        <Route exact path='/events/:slug' component={ViewEvent} />
+        <Route exact path='/event/:slug' component={ViewEvent} />
         <Route exact path='/myorder/:id' component={ViewOrder} />
 
         <Route exact path='/blogs' component={News} />
@@ -120,6 +122,8 @@ export default function Routes() {
 
         <AuthRoute exact path='/account/users' component={UsersMain} />
         <AuthRoute exact path='/account/users/create' component={UsersCreate} />
+        <AuthRoute exact path= '/account/tour-bookings' component={TourBookings} />
+        
         <AuthRoute
           exact
           path='/account/users/view/:name'

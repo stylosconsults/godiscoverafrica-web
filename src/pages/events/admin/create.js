@@ -17,7 +17,7 @@ export const EventsCreate = () => {
     startDate: '',
     endDate: '',
     place: '',
-    price: 0,
+    price: '',
     description: '',
     image: '',
   });
@@ -201,7 +201,7 @@ export const EventsCreate = () => {
                         onChange={onChange}
                       />
                     </Form.Group>
-                    {/* <Form.Group>
+                    <Form.Group>
                       <Form.Label>Price / Amount</Form.Label>
                       <Form.Control
                         type='number'
@@ -209,7 +209,7 @@ export const EventsCreate = () => {
                         value={variables.price}
                         onChange={onChange}
                       />
-                    </Form.Group> */}
+                    </Form.Group>
                     <Form.Label>Image Cover</Form.Label>
                     <Form.Group>
                       <ImageUpload

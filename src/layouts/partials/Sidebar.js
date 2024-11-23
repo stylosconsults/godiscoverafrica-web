@@ -1,31 +1,31 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import jwtDecode from 'jwt-decode';
+import React from "react";
+import { Link } from "react-router-dom";
+import jwtDecode from "jwt-decode";
 
-import { Button } from 'react-bootstrap';
+import { Button } from "react-bootstrap";
 
 const SideBar = () => {
   const logged = jwtDecode(localStorage.IdToken);
   return (
-    <div className='nav-left-sidebar sidebar-dark'>
-      <div className='menu-list'>
-        <nav className='navbar navbar-expand-lg navbar-light py-4'>
-          <Link to='/account' className='d-xl-none d-lg-none'>
+    <div className="nav-left-sidebar sidebar-dark">
+      <div className="menu-list">
+        <nav className="navbar navbar-expand-lg navbar-light py-4">
+          <Link to="/account" className="d-xl-none d-lg-none">
             Dashboard
           </Link>
 
-          <Button type='button' className='navbar-toggler'>
-            <span className='navbar-toggler-icon'></span>
+          <Button type="button" className="navbar-toggler">
+            <span className="navbar-toggler-icon"></span>
           </Button>
 
-          <div className='collapse navbar-collapse'>
-            <ul className='navbar-nav flex-column'>
-              <li className='nav-item '>
-                <Link to='/account' className='nav-link'>
-                  <i className='fab fa-android'></i> Dashboard
+          <div className="collapse navbar-collapse">
+            <ul className="navbar-nav flex-column">
+              <li className="nav-item ">
+                <Link to="/account" className="nav-link">
+                  <i className="fab fa-android"></i> Dashboard
                 </Link>
               </li>
-              {logged.role === 'admin' && (
+              {logged.role === "admin" && (
                 <>
                   {/* <li className='nav-item '>
                     <Link to='/account/users' className='nav-link'>
@@ -44,33 +44,37 @@ const SideBar = () => {
 									</li> */}
                 </>
               )}
-              <li className='nav-item '>
-                <Link to='/account/events' className='nav-link'>
-                  <i className='fa fa-calendar'></i> Events
+              <li className="nav-item ">
+                <Link to="/account/events" className="nav-link">
+                  <i className="fa fa-calendar"></i> Events
                 </Link>
               </li>
 
-              <li className='nav-item '>
-                <Link to='/account/events/participant' className='nav-link'>
-                  <i className='fas fa-newspaper'></i> Participants
+              <li className="nav-item ">
+                <Link to="/account/events/participant" className="nav-link">
+                  <i className="fas fa-newspaper"></i> Participants
                 </Link>
               </li>
 
-              <li className='nav-item '>
-                <Link to='/account/news' className='nav-link'>
-                  <i className='fas fa-newspaper'></i> Blogs
+              <li className="nav-item ">
+                <Link to="/account/news" className="nav-link">
+                  <i className="fas fa-newspaper"></i> Blogs
                 </Link>
               </li>
 
-              <li className='nav-item '>
-                <Link to='/account/tours' className='nav-link'>
-                  <i className='fas fa-newspaper'></i> Tours
+              <li className="nav-item ">
+                <Link to="/account/tours" className="nav-link">
+                  <i className="fas fa-newspaper"></i> Tours
                 </Link>
               </li>
-
-              <li className='nav-item '>
-                <Link to='/account/publications' className='nav-link'>
-                  <i className='fas fa-file'></i> GODISCOVER Documents
+              <li className="nav-item">
+                <Link to="/account/tour-bookings" className="nav-link">
+                  <i className="fas fa-newspaper"></i>Tour Bookings
+                </Link>
+              </li>
+              <li className="nav-item ">
+                <Link to="/account/publications" className="nav-link">
+                  <i className="fas fa-file"></i> GODISCOVER Documents
                 </Link>
               </li>
             </ul>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import ReactHtmlParser from 'react-html-parser';
 
 import Spinner from '../spinner/Spinner';
@@ -10,7 +10,7 @@ import { getAllTours } from '../../redux/actions';
 
 import './index.css';
 
-export const LatestTours = () => {
+export const LatestTours = ({isHome}) => {
   const [loading, setLoading] = useState(true);
 
   const data = useSelector((state) => state.toursReducer.tours);
@@ -32,11 +32,10 @@ export const LatestTours = () => {
   }
 
   return (
-    <section className='st-news bg-light'>
-      <Container>
+    <section className='st-news bg-light p-5'>
+    {isHome && <h1 style={{textAlign:'center'}} className='p-4'>Explore our tour packages</h1>}
         <Row>
           <Col sm={12}>
-            {/* <h4 className='col-sm-12'>Related Tours</h4> */}
             <Row>
               {data && !loading ? (
                 <>
@@ -83,7 +82,20 @@ export const LatestTours = () => {
             </Row>
           </Col>
         </Row>
-      </Container>
+        {isHome &&  <div className='d-flex justify-content-center'>
+            <Link to='/tours'>
+              <button
+                style={{
+                  backgroundColor: '#558a54',
+                  borderColor: '#558a54',
+                  textAlign: 'center',
+                }}
+                className='text-white m-3 btn btn-lg animate__animated animate__pulse animate__infinite'
+              >
+                More packages
+              </button>
+            </Link>
+          </div>}
     </section>
   );
 };

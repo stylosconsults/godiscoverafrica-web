@@ -46,7 +46,7 @@ export const RightBar = props => {
 					<div>
 						<Row className='mb-4 col-sm-12'>
 							<h4>
-								<b>Publications</b>
+								<b>Advertisement</b>
 							</h4>
 						</Row>
 						<Row>

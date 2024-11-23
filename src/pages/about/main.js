@@ -6,6 +6,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import { OurWork } from '../../components/section';
 
 import './index.css';
+import Contactinfo from '../contact/contactinfo';
 // const { REACT_APP_ABOUT_VIDEO } = process.env;
 export const About = () => {
   const boards = [
@@ -42,7 +43,8 @@ export const About = () => {
         <link rel='canonical' href='https://godiscoverafrica.rw//about' />
         <meta name='description' content='GoDiscover Africa' />
       </Helmet>
-      <section className='st-about-head' id={'who-we-are'}>
+      <div className="home-body"></div>
+      <section className='st-about-head pt-5 py-5 m-5 rounded-top' id={'who-we-are'}>
         <br />
         <br />
         <Container>
@@ -120,42 +122,8 @@ export const About = () => {
           </Row>
         </Container>
       </section>
-      {/* <section
-				className='st-about-body pt-2 background-white'
-				id={'team'}
-			>
-				<Container className=''>
-				 <Row className='st-about-team pt-3'>
-						<Container>
-							<Row>
-								<Col sm={12}>
-									<p className='title text-center text-light'>Our Team</p>
-								</Col>
-							</Row>
-							<Row className='mt-0 pt-1'>
-								{boards &&
-									boards.map(index => (
-										<Col sm={3} className='mt-3 py-4'>
-											<Image
-												alt={index.names}
-												title={index.names}
-												src={index.image}
-												className='img-fluid'
-											/>
-											<p className='h2 font-weight-bold text-light mt-4 text-center mb-0'>
-												{index.names}
-											</p>
-											<p className='text-center text-light'>
-												<span className='text-center text-white'>{index.role}</span>
-											</p>
-										</Col>
-									))}
-							</Row>
-						</Container>
-					</Row>
-				</Container>
-			</section> */}
-      {/* <OurWork /> */}
+      <br/>
+			<Contactinfo/>
     </AppLayout>
   );
 };

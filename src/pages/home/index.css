@@ -1,5 +1,5 @@
 .color-yellow {
-    color: #ec7500 !important;
+    color: #558a54 !important;
 }
 
 .text-bold {
@@ -93,7 +93,7 @@
     background: rgba(0, 0, 0, 0.70);
     border-radius: 6px;
     font-size: 24 !important;
-    border-top: 2px solid #ec7500;
+    border-top: 2px solid #558a54;
 }
 
 .st-slide .carousel .carousel-caption h3 {
@@ -139,8 +139,8 @@
 }
 
 .st-about .btn {
-    background: #ec7500;
-    border: 4px solid #ec7500;
+    background: #558a54;
+    border: 4px solid #558a54;
     color: #000000;
     height: 45px;
     transition: all 0.6s ease;
@@ -151,7 +151,7 @@
 .st-about .btn:active,
 .st-about .btn:focus {
     background: transparent;
-    border: 4px solid #ec7500;
+    border: 4px solid #558a54;
     color: #ffffff;
     transition: all 0.8s ease;
 }
@@ -183,7 +183,7 @@
 }
 
 .st-service .our-services-text h4::before {
-    background: #ec7500 none repeat scroll 0 0;
+    background: #558a54 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 2px;
@@ -229,7 +229,7 @@
 .covid-link{
     padding:10px; 
     font-weight: 400; 
-    color:  #ec7500
+    color:  #558a54
 }
 
 .covid-link:hover{
@@ -246,7 +246,7 @@
     display: block;
     padding: 2px;
     width: 20%;
-    background: #ec7500;
+    background: #558a54;
     border-radius: 22px;
 }
 
@@ -261,7 +261,7 @@
 .new-home p:active,
 .new-home p:focus {
     text-decoration: underline;
-    color: #ec7500;
+    color: #558a54;
     cursor: pointer;
 }
 
@@ -275,7 +275,7 @@
 } */
 
 .new-home .new-event .event-calendar {
-    background: #ec7500;
+    background: #558a54;
     color: #fff !important;
     width: 55px;
     height: 55px;
@@ -316,7 +316,7 @@
 .new-home a:hover,
 .new-home a:active,
 .new-home a:focus {
-    /* color: #ec7500 !important; */
+    /* color: #558a54 !important; */
     text-decoration: underline !important;
 }
 
@@ -337,7 +337,7 @@
 }
 
 .covid-box .list-group-item i {
-    color: #ec7500;
+    color: #558a54;
 }
 
 .covid-box h2.custom-btn-1,

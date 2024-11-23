@@ -74,7 +74,7 @@ export default function ImageUpload({
 						data={
 							edit
 								? documentURL
-								: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701412926/WEBS/godiscover/document_ppeg6r.png'
+								: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701412926/WEBS/godiscover/document_ppeg6r.png'
 						}
 						type='application/pdf'
 						style={{
@@ -88,7 +88,7 @@ export default function ImageUpload({
 							href={
 								edit
 									? documentURL
-									: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701412926/WEBS/godiscover/document_ppeg6r.png'
+									: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701412926/WEBS/godiscover/document_ppeg6r.png'
 							}
 							rel='noopener noreferrer'
 							aria-label='publication'

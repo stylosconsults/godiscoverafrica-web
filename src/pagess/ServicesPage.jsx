@@ -6,6 +6,7 @@ const ServicesPage = () => {
   return (
     <div className="events-parent">
       <AppLayout>
+        <div className="home-body"></div>
         <CardsGroup />
       </AppLayout>
     </div>

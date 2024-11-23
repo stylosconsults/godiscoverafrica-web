@@ -221,7 +221,7 @@ export const NewsAdminView = (props) => {
                         coverURL={
                           variables.image !== ''
                             ? variables.image
-                            : 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701413117/WEBS/godiscover/default_Image_rgcqj7_jdxotc.jpggg'
+                            : 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701413117/WEBS/godiscover/default_Image_rgcqj7_jdxotc.jpggg'
                         }
                         edit={edit}
                         files={files}

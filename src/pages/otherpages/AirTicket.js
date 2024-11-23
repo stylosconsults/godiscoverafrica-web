@@ -121,6 +121,7 @@ export const Airticket = () => {
           content='Airticket GoDiscover Africa on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
         />
       </Helmet>
+      <div className="home-body"></div>
       <section className='contact bg-light pt-4'>
         <Container>
           <Row className='justify-content-center'>

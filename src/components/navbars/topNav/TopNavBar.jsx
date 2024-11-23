@@ -44,17 +44,6 @@ const TopNavBar = () => {
         <Navbar className={`top-nav`} expand="md">
           <Container>
           <Nav className="ml-auto">
-          <Navbar.Brand as={Link} to="/terms-and-conditions">
-          <span className="text-light"  style={{color:'white',textTransform: 'lowercase'}}>
-              +250 791 349 744
-          </span>
-        </Navbar.Brand>
-        <Navbar.Brand as={Link} to="/terms-and-conditions">
-        <span className="text-light" style={{color:'white',textTransform: 'lowercase'}}>
-              info@godiscoverafrica.rw
-        </span>
-        </Navbar.Brand>
-           
             </Nav>
             <Nav className="icon-nav">
               <div className="social-icon" style={{width: '250px'}}>

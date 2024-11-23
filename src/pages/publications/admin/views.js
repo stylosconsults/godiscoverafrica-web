@@ -224,8 +224,8 @@ export const PublicationsView = props => {
 											<DocumentUpload
 												documentURL={
 													variables.pubDocument !== ''
-														? 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701412926/WEBS/godiscover/document_ppeg6r.png'
-														: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701412926/WEBS/godiscover/document_ppeg6r.png'
+														? 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701412926/WEBS/godiscover/document_ppeg6r.png'
+														: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701412926/WEBS/godiscover/document_ppeg6r.png'
 												}
 												edit={edit}
 												files={files}
