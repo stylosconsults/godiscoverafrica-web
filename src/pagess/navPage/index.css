@@ -1,0 +1,9 @@
+nav.navbar.scrolled {
+    padding: 0px 0;
+    background-color: #558a54;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+    top: 0;
+    border: none;
+  }
