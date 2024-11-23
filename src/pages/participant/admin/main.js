@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import jwtDecode from 'jwt-decode';
 import * as API from '../../../api/index';
@@ -26,11 +27,12 @@ export const ParticipantMain = () => {
   const error = useSelector((state) => state.newsReducer.error);
 
   const getAllParticipants = async () => {
-    const allParticipants = await API.getParticipants('/api/participant/all/1');
+    const allParticipants = await API.getParticipants('/api/participant/all');
 
     try {
       const allParticipantsList = await allParticipants.json();
       if (allParticipants.status === 200) {
+        setLoading(!loading);
         setParticipants(allParticipantsList);
       }
     } catch (error) {
@@ -41,7 +43,6 @@ export const ParticipantMain = () => {
 
   useEffect(() => {
     getAllParticipants();
-    setLoading(!loading);
   }, []);
 
   if (error) {
@@ -91,96 +92,56 @@ export const ParticipantMain = () => {
                     <thead>
                       <tr>
                         <th scope='col'>#</th>
-                        <th></th>
+                        <th scope='col'>Event Name</th>
                         <th scope='col'>Title</th>
-                        <th scope='col'>Names</th>
+                        <th scope='col'>Family Name</th>
+                        <th scope='col'>First Name</th>
                         <th scope='col'>Position</th>
+                        {/* <th scope='col'>Department</th> */}
                         <th scope='col'>Organization</th>
-                        <th scope='col'>Published_At</th>
-                        <th scope='col'></th>
-                        <th scope='col'></th>
+                        <th scope='col'>Address</th>
+                        <th scope='col'>Country</th>
+                        <th scope='col'>Town</th>
+                        <th scope='col'>Phone</th>
+                        <th scope='col'>Email</th>
+                        {/* <th scope='col'>Diet Requirements</th> */}
+                        <th scope='col'>Amount</th>
+                        <th scope='col'>Created At</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {participants && !loading ? (
+                      {!loading ? (
                         <>
                           {participants &&
-                            participants.map((singleNews, i) => (
-                              <tr>
+                            participants.map((event, i) => (
+                              <tr key={event.id}>
                                 <th scope='row'>{i + 1}</th>
+                                <td>{event.eventName}</td>
+                                <td>{event.title}</td>
+                                <td>{event.familyName}</td>
+                                <td>{event.firstName}</td>
+                                <td>{event.position}</td>
+                                {/* <td>{event.department}</td> */}
+                                <td>{event.organization}</td>
+                                <td>{event.address}</td>
+                                <td>{event.country}</td>
+                                <td>{event.town}</td>
+                                <td>{event.phone}</td>
+                                <td>{event.email}</td>
+                                {/* <td>{event.dietRequirements}</td> */}
+                                <td>{event.amount}</td>
                                 <td>
-                                  {/* <Image
-                                    alt={singleNews.title}
-                                    title={singleNews.title}
-                                    src={singleNews.image}
-                                    className='img-fluid'
-                                    width={50}
-                                  /> */}
-                                </td>
-                                <td> {singleNews.title} </td>
-                                <td>
-                                  {singleNews.familyName} {singleNews.firstName}
-                                </td>
-                                <td>
-                                  {singleNews.position}{' '}
-                                  <i className='fa fa-comment ml-1'></i>
-                                </td>
-                                <td>{singleNews.organization}</td>
-                                <td>
-                                  {moment(singleNews.createdAt).format(
-                                    'MMMM d, y',
-                                  )}
-                                </td>
-
-                                <td>
-                                  {decodedToken &&
-                                    decodedToken.role === 'admin' && (
-                                      <Form>
-                                        {/* <Button
-                                          variant={
-                                            singleNews.isPublished === false
-                                              ? 'success'
-                                              : 'warning'
-                                          }
-                                          title={
-                                            singleNews.isPublished === false
-                                              ? 'Click to publish this news'
-                                              : 'Click to unpublish this news'
-                                          }
-                                          className='btn-xs'
-                                          //   onClick={() =>
-                                          //     submitNewsStatus(
-                                          //       singleNews.isPublished,
-                                          //       singleNews.slug,
-                                          //     )
-                                          //   }
-                                          style={{ display: 'flex' }}
-                                        >
-                                          {singleNews.isPublished === false ? (
-                                            <i className='fas fa-check mr-1'></i>
-                                          ) : (
-                                            <i className='fa fa-ban mr-1'></i>
-                                          )}
-                                          {singleNews.isPublished === false
-                                            ? 'Publish'
-                                            : 'UnPublish'}
-                                        </Button> */}
-                                      </Form>
-                                    )}
-                                </td>
-                                <td>
-                                  <Link
-                                    to={`/account/news/view/${singleNews.slug}`}
-                                    className='btn btn-primary btn-xs'
-                                  >
-                                    <i className='fa fa-tasks mr-1'></i>View
-                                  </Link>
+                                  {moment(event.createdAt).format('MMMM d, y')}
                                 </td>
                               </tr>
                             ))}
                         </>
                       ) : (
-                        <Spinner />
+                        <tr>
+                          <td colSpan='17'>
+                            <Spinner />
+                          </td>
+                        </tr>
                       )}
                     </tbody>
                   </table>

@@ -141,6 +141,7 @@ export const ContactForm = () => {
               type='submit'
               variant='outline-primary'
               className='mt-3 col-sm-6'
+              style={{backgroundColor:'#1E425E'}}
             >
               <i className='fa fa-save'></i> Send message
             </Button>

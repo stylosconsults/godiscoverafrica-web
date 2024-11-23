@@ -32,8 +32,8 @@ export const LatestNews = () => {
   }
 
   return (
-    <section className='st-news bg-light'>
-      <Container>
+    <section className='st-news bg-light p-5'>
+      <Container fluid className=''>
         <Row>
           <Col sm={12}>
             <Row>

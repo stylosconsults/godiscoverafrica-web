@@ -99,7 +99,7 @@ export const PublicationsMain = () => {
 																href={publication.pubDocument}
 																target='_blank'
 																rel='noopener noreferrer'
-																style={{ color: '#ec7500' }}
+																style={{ color: '#558a54' }}
 																aria-label='View document'
 															>
 																View Document

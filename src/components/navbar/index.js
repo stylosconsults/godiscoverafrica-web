@@ -45,7 +45,7 @@ export const NavBar = () => {
 					<Image
 						alt='GoDiscover Africa Logo'
 						title='GoDiscover Africa Logo'
-						src='https://res.cloudinary.com/dfsai53mw/image/upload/v1700398863/WEBS/godiscover/Godiscover_ystvkb.png'
+						src='https://res.cloudinary.com/dfsai53mw1/image/upload/v1700398863/WEBS/godiscover/Godiscover_ystvkb.png'
 						width='40%'
 						className='img-fluid d-inline-block align-top ml-2 logo'
 					/>

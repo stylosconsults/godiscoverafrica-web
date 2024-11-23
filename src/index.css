@@ -32,16 +32,16 @@ body {
 }
 
 .main::-webkit-scrollbar-thumb {
-  	background: #f6a643;
+  	background: #558a54;
   	border-radius: 6px;
 }
 
 .color-yellow {
-    color: #f6a643 !important;
+    color: #558a54 !important;
 }
 
 ::selection {
-    background: #f6a643;
+    background: #558a54;
     color: #ffffff;
 }
 
@@ -186,13 +186,6 @@ table tr td {
     background-color: #fff;
   }
   
-  /* .static-two {
-    background-color: #aacfcf;
-  }
-  
-  .static-three {
-    background-color: #c06c84;
-  } */
   
   .parallax::after {
     /* Position the pseudo-element to fill the parent */
@@ -362,7 +355,7 @@ table tr td {
 /* design for home Page */
 .home-styles {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../src/assets/assetss/Akagera-Hippos.jpg");
+    url("../src/assets/assetss/bg-work.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -371,20 +364,8 @@ table tr td {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  /* gap: 50px; */
   background-color: #856404;
-}
-
-
-/*carousel*/
-.carousel-caption {
-  position: absolute;
-  left: 10%;
-  top: 60%;
-  transform: translateY(-50%);
-  color: #fff !important;
-  text-align: left;
-  width: 50%;
 }
 
 .navbar-toggler-icon {
@@ -399,10 +380,6 @@ table tr td {
 .footer {
   background-color: #558a54;
   color: white;
-}
-
-.carousel-image{
-  border: 2px solid black;
 }
 
 /*Participants table styling*/

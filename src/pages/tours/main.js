@@ -9,16 +9,17 @@ import './index.css';
 export const Tours = () => {
 	return (
 		<AppLayout>
-			<section className='py-5 about-screen'>
+			<div className="home-body"></div>
+			<section className='py-5 about-screen px-4'>
 				<Container>
 					<Row>
 						<ToursBox />
 					</Row>
-
+					</Container>
 					<Row className='mt-5'>
 						<LatestTours />
 					</Row>
-				</Container>
+				
 			</section>
 		</AppLayout>
 	);

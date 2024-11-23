@@ -111,7 +111,7 @@ export const EventsMain = () => {
 													<td>{moment(event.endDate).format('LLL')}</td>
 													<td>{event.place}</td>
 													<td>
-														{event.price ? event.price + ' Rwf' : 'Free entry'}
+														{event.price ? event.price + ' $' : 'Free entry'}
 													</td>
 													<td>
 														{decodedToken && decodedToken.role === 'admin' && (

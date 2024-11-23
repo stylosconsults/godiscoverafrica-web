@@ -1,12 +1,27 @@
-import React from "react";
+import React ,{ useEffect, useState } from "react";
 import { Container, Row, Col, Form, Button, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AppLayout } from "../../layouts";
 import ParticipantForm from "./ParticipantForm";
-// import PartPaymentForm from "./PartPaymentForm";
 import './index.css'
+import { useDispatch, useSelector } from "react-redux";
+import { getEvents } from "../../redux/actions";
+import Spinner from "../../components/spinner/Spinner";
 
 const ParticipentEvent = () => {
+  const [loading, setLoading] = useState(true);
+  const events = useSelector((state) => state.eventReducer.events);
+  const error = useSelector((state) => state.eventReducer.error);
+  const theLoading = useSelector((state) => state.eventReducer.loading);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getEvents());
+    setTimeout(function () {
+      setLoading(!theLoading);
+    }, 500);
+  }, [dispatch, theLoading]);
   return (
     <AppLayout>
       <Container fluid className="bg-white">
@@ -24,7 +39,6 @@ const ParticipentEvent = () => {
           </Col>
         </Row>
         <ParticipantForm />
-        {/* <PartPaymentForm /> */}
         <div>
           <h1 className="reg-header">Data Protection Statement & Personality / Image Rights</h1>
           <p>

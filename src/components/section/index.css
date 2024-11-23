@@ -119,7 +119,7 @@ section.st-header h2 {
     color: #ffffff !important;
     border-radius: 6px;
     font-size: 24 !important;
-    border-top: 2px solid #ec7500;
+    border-top: 2px solid #558a54;
     padding: 5px;
     text-align: center;
 }
@@ -138,7 +138,7 @@ section.st-header h2 {
 }
 
 .react-slideshow-container .slide-custom-btn:hover {
-    background: #ec7500 !important;
+    background: #558a54 !important;
     transition:  all 0.6s ease;
 }
 
@@ -215,15 +215,15 @@ section.st-header h2 {
 .comment-form textarea.form-control:hover,
 .comment-form textarea.form-control:active,
 .comment-form textarea.form-control:focus {
-  border: 1px solid #ec7500;
+  border: 1px solid #558a54;
 }
 
 .comment-form button.btn,
 .comment-form button.btn:hover,
 .comment-form button.btn:active,
 .comment-form button.btn:focus {
-  background: #ec7500;
-  border: 4px solid #ec7500;
+  background: #558a54;
+  border: 4px solid #558a54;
   color: #ffffff;
   height: 45px;
   transition: all 0.6s ease;
@@ -291,8 +291,8 @@ section.st-header h2 {
 
 .readmore {
     text-align: center;
-    background: #ec7500 !important;
-    border: 4px solid #ec7500 !important;
+    background: #558a54 !important;
+    border: 4px solid #558a54 !important;
     /* background-color:#000000 !important; */
     /* color: #000000 !important; */
     height: 45px;
@@ -302,7 +302,7 @@ section.st-header h2 {
 
 .readmore:hover {
     background: #241E20 !important;
-    border: 4px solid #ec7500 !important;
+    border: 4px solid #558a54 !important;
     /* background-color:#000000 !important; */
     color: #ffffff !important;
     height: 45px;
