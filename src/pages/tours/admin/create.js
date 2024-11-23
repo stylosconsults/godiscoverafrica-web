@@ -18,7 +18,11 @@ export const ToursCreate = () => {
     authorId: '',
     image: '',
     location: '',
-    price: '',
+    price1: '',
+    price2: '',
+    price3: '',
+    price4: '',
+    price5: '',
     departureTime: '',
     tips: ['No'],
     includes: ['No'],
@@ -193,11 +197,47 @@ export const ToursCreate = () => {
                       />
                     </Form.Group>
                     <Form.Group>
-                      <Form.Label>Price</Form.Label>
+                      <Form.Label>Price 1 person</Form.Label>
                       <Form.Control
                         type='number'
-                        name='price'
-                        value={variables.price}
+                        name='price1'
+                        value={variables.price1}
+                        onChange={onChange}
+                      />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>Price 2 People</Form.Label>
+                      <Form.Control
+                        type='number'
+                        name='price2'
+                        value={variables.price2}
+                        onChange={onChange}
+                      />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>Price 3 People </Form.Label>
+                      <Form.Control
+                        type='number'
+                        name='price3'
+                        value={variables.price3}
+                        onChange={onChange}
+                      />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>Price 4 People </Form.Label>
+                      <Form.Control
+                        type='number'
+                        name='price4'
+                        value={variables.price4}
+                        onChange={onChange}
+                      />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>Price 5 People</Form.Label>
+                      <Form.Control
+                        type='number'
+                        name='price5'
+                        value={variables.price5}
                         onChange={onChange}
                       />
                     </Form.Group>

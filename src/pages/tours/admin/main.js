@@ -128,7 +128,11 @@ export const ToursMain = () => {
 																	{singleTours.comments.length}{' '}
 																	<i className='fa fa-comment ml-1'></i>
 																</td> */}
-                                <td>{singleTours.price}</td>
+                                <td>
+                                  {singleTours.price1} | {singleTours.price2} | {' '}
+                                  {singleTours.price3} | {singleTours.price4} |
+                                  {singleTours.pric5}
+                                </td>
                                 <td>
                                   {moment(singleTours.createdAt).format(
                                     'MMMM d, y',

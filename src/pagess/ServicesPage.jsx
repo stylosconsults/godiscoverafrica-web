@@ -1,12 +1,16 @@
 import React from "react";
-import CardsGroup from "../components/Eventss/services/CardsGroup";
 import { AppLayout } from "../layouts";
+import ServicesGroup from "../components/services/ServicesGroup";
 
 const ServicesPage = () => {
   return (
     <div className="events-parent">
       <AppLayout>
-        <CardsGroup />
+        <div className="home-body"></div>
+        <ServicesGroup/>
+        <br/>
+        <br/>
+        <br/>
       </AppLayout>
     </div>
   );

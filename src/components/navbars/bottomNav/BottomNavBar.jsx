@@ -14,10 +14,10 @@ const BottomNavBar = () => {
 
   return (
     <Navbar
-      className="custom-navbar border-bottom"
-      collapseOnSelect
+      className="custom-navbar"
+      // collapseOnSelect
       sticky="top"
-      expand="lg"
+      expand="md"
       expanded={expanded}
     >
       <Navbar.Toggle
@@ -26,7 +26,7 @@ const BottomNavBar = () => {
         className=""
       />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mx-auto">
+        <Nav className="md-auto">
           <Nav.Link>
             <NavLink
               to="/"
@@ -45,8 +45,8 @@ const BottomNavBar = () => {
               Services
             </NavLink>
           </Nav.Link>
-          <Nav.Link>
-          <NavLink
+          {/* <Nav.Link> */}
+          {/* <NavLink
                 to="/tours"
                 className="sub-link"
                 activeClassName="active"
@@ -54,7 +54,7 @@ const BottomNavBar = () => {
               >
                 Tours
               </NavLink>
-          </Nav.Link>
+          </Nav.Link> */}
           {/* <NavDropdown title="Tours" alignLeft className="dropdown fade-up">
             <NavDropdown.Item>
               <NavLink
@@ -77,7 +77,7 @@ const BottomNavBar = () => {
               </NavLink>
             </NavDropdown.Item>
           </NavDropdown> */}
-          <Nav.Link>
+          {/* <Nav.Link>
             <NavLink
               to="/airticket"
               activeClassName="active"
@@ -85,9 +85,9 @@ const BottomNavBar = () => {
             >
               Air Ticket
             </NavLink>
-          </Nav.Link>
+          </Nav.Link> */}
    
-          <Nav.Link>
+          {/* <Nav.Link>
             <NavLink
               to="/carrental"
               activeClassName="active"
@@ -95,7 +95,7 @@ const BottomNavBar = () => {
             >
               Car rental
             </NavLink>
-          </Nav.Link>
+          </Nav.Link> */}
 
           {/* <Nav.Link>
           <NavLink
@@ -104,12 +104,12 @@ const BottomNavBar = () => {
                 activeClassName="active"
                 onClick={() => onUpdateActiveLink("events")}
               >
-               Events Management
+               Events
               </NavLink>
           </Nav.Link> */}
           
 
-          <NavDropdown title="Events Management" alignLeft className="dropdown fade-up">
+          {/* <NavDropdown title="Events Management" alignLeft className="dropdown fade-up">
             <NavDropdown.Item>
               <NavLink
                 to="/events"
@@ -140,18 +140,18 @@ const BottomNavBar = () => {
                Request for event support
               </NavLink>
             </NavDropdown.Item>
-            {/* <NavDropdown.Item>
+            <NavDropdown.Item>
             <NavLink
                to="/participant"
                activeClassName="active"
                className="sub-link"
                 onClick={() => onUpdateActiveLink("participant")}
               >
-               Participate event
+               Register to an event
               </NavLink>
-            </NavDropdown.Item> */}
-          </NavDropdown>
-
+            </NavDropdown.Item>
+          </NavDropdown> */}
+{/* 
           <Nav.Link>
             <NavLink
               to="/accommodation"
@@ -160,9 +160,9 @@ const BottomNavBar = () => {
             >
               Accommodation
             </NavLink>
-          </Nav.Link>
+          </Nav.Link> */}
        
-          <NavDropdown title="Media" alignLeft className="dropdown fade-up">
+          {/* <NavDropdown title="Media" alignLeft className="dropdown fade-up">
             <NavDropdown.Item>
               <NavLink
                 to="/publications"
@@ -183,7 +183,7 @@ const BottomNavBar = () => {
                 Blogs
               </NavLink>
             </NavDropdown.Item>
-          </NavDropdown>
+          </NavDropdown> */}
           <Nav.Link>
             <NavLink
            to="/about"

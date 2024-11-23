@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import 'dotenv/config';
@@ -143,7 +144,8 @@ export const Home = () => {
 							<p className='text-normal'>
 								<p className=' title'>Contacts</p>
 								<p className='py-2'>
-									<i className='fa fa-phone mr-2'></i> ‎+250 791 349 744 <br />
+									<i className='fa fa-phone mr-2'></i> ‎+250 785603243 <br />
+									<i className='fa fa-inbox mr-2'></i> godiscoverafricaltd@gmail.com <br />
 									<i className='fa fa-inbox mr-2'></i> info@godiscoverafrica.rw <br />
 								
 								</p>

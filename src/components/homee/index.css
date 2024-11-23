@@ -1,17 +1,10 @@
 .home-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 50px; */
+  margin-top: 80px; /* Adjust this to the navbar height */
 }
-.carousel-item {
-  position: relative;
-  height: 80vh;
-  width: 100%;
-}
-.carousel-item img{
-  height: 100%;
-  width: 100vw;
-}
+
 .carousel-overlay {
   position: absolute;
   top: 0;
@@ -26,12 +19,6 @@
   z-index: 1;
 }
 
-.youtube-iframe {
-  border-radius: 10px;
-  border: 0px solid transparent;
-  width: 80%;
-  height: 300px;
-}
 .ev-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
     url("../../assets/assetss/gorillas.png");
@@ -90,10 +77,6 @@
   width: 100%; /* Ensure the image fills its container */
   padding: 20px; /* Add padding for better spacing (adjust as needed) */
 }
-.danger {
-  background-color: #558a54;
-  color: #fff;
-}
 .blog-card {
   overflow: hidden; /* Ensure the overflow is hidden to contain the grayscale effect */
 }
@@ -118,10 +101,6 @@
     left: 30%;
     width: 100vw;
   }
-  /* .danger{
-    display: flex;
-    flex-direction: column;
-  } */
   .events-card{
     display: flex;
     flex-direction: column;
@@ -131,5 +110,55 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+/* Reset initial styles */
+.fade-in-title, .fade-in-text, .slide-in-right {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Animations active when the div is on screen */
+.animate .fade-in-title {
+  animation: fadeInZoom 1.5s forwards;
+}
+
+.animate .fade-in-text {
+  animation: fadeIn 1.5s forwards 0.3s;
+}
+
+.animate .slide-in-right {
+  animation: fadeSlideIn 1.5s forwards 0.5s;
+}
+
+/* Keyframes */
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

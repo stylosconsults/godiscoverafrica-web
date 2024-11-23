@@ -8,7 +8,6 @@ import { Contact } from './pages/contact';
 import { UsersMain, UsersCreate, UsersView } from './pages/users';
 import HomeBody from './components/homee/HomeBody';
 import ServicesPage from './pagess/ServicesPage';
-import EventPage from './pagess/EventPage';
 import {
   ViewEvent,
   EventsMain,
@@ -59,16 +58,19 @@ import {
 } from './pages/users';
 import TicketForm from './components/requestform/TicketForm';
 import EventForm from './components/requestform/EventFrom';
-import EventDetail from './components/Eventss/EventDetail';
 import { ParticipantMain } from './pages/participant/admin/main';
 import ParticipantForm from './pages/participant/ParticipantForm';
 import { Airticket, RentalCar, Accommodation } from './pages/otherpages';
 import ViewOrder from './pagess/ViewOrder';
 import Pay from './components/payment/pay';
+import { TourBookings } from './pages/toursBookings/main';
+import ServiceDetail from './components/services/serviceDetail';
+import ScrollToTop from './ScrollTop';
 
 export default function Routes() {
   return (
     <Router>
+      <ScrollToTop />
       <Switch>
         <Route exact path='/' component={HomeBody} />
         <Route exact path='/ticket' component={TicketForm} />
@@ -80,11 +82,12 @@ export default function Routes() {
         <Route exact path='/pay' component={Pay} />
         <Route exact path='/services' component={ServicesPage} />
         <Route exact path='/contact' component={Contact} />
-        <Route exact path='/events' component={EventPage} />
+        {/* <Route exact path='/events' component={EventPage} /> */}
         <Route exact path='/participant' component={ParticipantForm} />
-        <Route exact path='/events/:id' component={EventDetail} />
-        <Route exact path='/previous-events' component={Events} />
-        <Route exact path='/events/:slug' component={ViewEvent} />
+        {/* <Route exact path='/events/:id' component={EventDetail} /> */}
+        <Route exact path='/services/:id' component={ServiceDetail} />
+        {/* <Route exact path='/previous-events' component={Events} /> */}
+        {/* <Route exact path='/event/:slug' component={ViewEvent} /> */}
         <Route exact path='/myorder/:id' component={ViewOrder} />
 
         <Route exact path='/blogs' component={News} />
@@ -122,6 +125,12 @@ export default function Routes() {
         <AuthRoute exact path='/account/users/create' component={UsersCreate} />
         <AuthRoute
           exact
+          path='/account/tour-bookings'
+          component={TourBookings}
+        />
+
+        <AuthRoute
+          exact
           path='/account/users/view/:name'
           component={UsersView}
         />
@@ -132,7 +141,11 @@ export default function Routes() {
         /> */}
 
         <AuthRoute exact path='/account/events' component={EventsMain} />
-        <AuthRoute exact path='/account/events/participant' component={ParticipantMain} />
+        <AuthRoute
+          exact
+          path='/account/events/participant'
+          component={ParticipantMain}
+        />
         <AuthRoute
           exact
           path='/account/events/create'

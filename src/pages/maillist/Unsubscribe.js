@@ -29,7 +29,7 @@ export const Unsubscribe = () => {
 				<div className='card'>
 					<div className='card-header text-center py-3'>
 						<Image
-							src='https://res.cloudinary.com/dfsai53mw/image/upload/v1700398863/WEBS/godiscover/Godiscover_ystvkb.png'
+							src='https://res.cloudinary.com/dfsai53mw1/image/upload/v1700398863/WEBS/godiscover/Godiscover_ystvkb.png'
 							alt='Image Logo'
 							className='splash-img-header img-fluid'
 						/>

@@ -45,7 +45,7 @@ export const NewsBox = () => {
 													href={`/blog/${oneNews.slug}`}
 													thumbnail={oneNews.image}
 													title={oneNews.title}
-													author={oneNews.author.organization}
+													// author={oneNews.author.organization}
 													date={moment(oneNews.createdAt).format('MMMM d, y')}
 												/>
 											))}
@@ -61,7 +61,7 @@ export const NewsBox = () => {
 														href={`/blog/${oneNews.slug}`}
 														thumbnail={oneNews.image}
 														title={oneNews.title}
-														author={oneNews.author.organization}
+														// author={oneNews.author.organization}
 														date={moment(oneNews.createdAt).format('MMMM d, y')}
 													/>
 												))}
@@ -77,7 +77,7 @@ export const NewsBox = () => {
 														href={`/blog/${oneNews.slug}`}
 														thumbnail={oneNews.image}
 														title={oneNews.title}
-														author={oneNews.author.organization}
+														// author={oneNews.author.organization}
 														date={moment(oneNews.createdAt).format('MMMM d, y')}
 													/>
 												))}

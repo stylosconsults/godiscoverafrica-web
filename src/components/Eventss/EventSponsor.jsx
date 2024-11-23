@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import event from "../../assets/assetss/godiscover.jpeg"
+import event from "../../assets/assetss/godiscoverafrica.png"
 
 const EventSponsor = () => {
   const sponsorLogos=Array(18).fill(event)

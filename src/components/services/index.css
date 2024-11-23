@@ -1,0 +1,40 @@
+.card-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../../assets/assetss/akagera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: center;
+    height: 500px;
+    border-radius: 20px;
+  }
+  .card-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../../assets/assetss/bg-work.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: center;
+    height: 500px;
+    border-radius: 20px;
+  }
+  .card-3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../../assets/assetss/INTEPRETATION.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: center;
+    height: 500px;
+    border-radius: 20px;
+  }
+  .card-4 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../../assets/assetss/bgslide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: center;
+    height: 500px;
+    border-radius: 20px;
+  }
+
+  .text-large {
+    font-size: 20px !important;
+  }

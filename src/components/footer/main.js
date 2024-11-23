@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Partner } from '../partner';
+
 import './index.css';
+import { Subscribe } from '../../pages/maillist';
 // import { Subscribe } from '../../pages/maillist';
 export class Footer extends Component {
   render() {
     return (
       <footer>
+        <br/>
+        <br/>
         <Partner />
-        {/* <section className='about-screen mt-0'>
-          <Container className='py-4'>
-            <Row className='border-top'>
+        <div className='ft-top py-2'>
+        <Container className='py-4'>
+            <Row className=''>
               <Col
                 lg={6}
                 md={6}
@@ -22,10 +26,13 @@ export class Footer extends Component {
                 <p className='text-normal'>
                   <p className=' title'>Contacts</p>
                   <p className='py-2'>
-                    <i className='fa fa-phone mr-2'></i> ‎+250 791 349 744{' '}
+                    <i className='fa fa-phone mr-2'></i>+250 785603243{' '}
                     <br />
                     <i className='fa fa-inbox mr-2'></i>{' '}
                     info@godiscoverafrica.rw <br />
+                    <br />
+                    <i className='fa fa-inbox mr-2'></i>{' '}
+                    godiscoverafricaltd@gmail.com <br />
                   </p>
 
                   <p>
@@ -36,7 +43,7 @@ export class Footer extends Component {
                 <Link to='/contact'>
                   <Button
                     variant='default'
-                    className='btn btn-custom-primary mt-3'
+                    className='btn btn-custom-primary mt-3 text-light'
                   >
                     Contact us
                   </Button>
@@ -51,12 +58,10 @@ export class Footer extends Component {
               </Col>
             </Row>
           </Container>
-        </section> */}
-        <div className='ft-top py-2'>
-          <Container fluid className='pl-5 pr-5'>
+          {/* <Container fluid className='pl-5 pr-5'>
             <Row className='py-3 justify-content-center text-center'>
               <h2 className='mb-4 mt-3'>Useful Links</h2>
-              <Col lg={12}>
+              <Col lg={12} className='text-light'>
                 <a
                   href='https:/gov.rw/'
                   className='ft-link'
@@ -76,29 +81,9 @@ export class Footer extends Component {
                 >
                   Car rental
                 </a>
-                &nbsp; | &nbsp;{' '}
-                {/* <a
-                  href='https:/www.carrental.bookme.rw/'
-                  className='ft-link'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  aria-label='Rwanda Development Board'
-                >
-                  Rwanda Development Board
-                </a>
-                &nbsp; | &nbsp;{' '}
-                <a
-                  href='https://www.rwandair.com/'
-                  className='ft-link'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  aria-label='Rwandair'
-                >
-                  Rwandair
-                </a> */}
               </Col>
             </Row>
-          </Container>
+          </Container> */}
         </div>
         <div className='ft-bottom'>
           <Container fluid className='pl-5 pr-5'>

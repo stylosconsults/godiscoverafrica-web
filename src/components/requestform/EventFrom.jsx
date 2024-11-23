@@ -18,6 +18,7 @@ const EventForm = () => {
 						content='Make a request for an event management support'
 					/>
 				</Helmet>
+				<div className="home-body"></div>
 				<Header title='Make a request for an event management support' />
 
 				<section className='mt-5 mb-5 become-member bg-light'>

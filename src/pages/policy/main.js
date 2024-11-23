@@ -21,7 +21,7 @@ export class Policy extends Component {
 				</Helmet>
 				<Header title='Privacy Policy' />
 
-				<section className='mt-5 mb-5 policy'>
+				<section className='mt-5  mb-5 policy' style={{backgroundColor: "white"}}>
 					<Container>
 						<Row>
 							<Col sm={10}>
